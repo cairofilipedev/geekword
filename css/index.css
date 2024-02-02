@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /*cor do fundo*/
+    box-sizing: border-box;
+    flex-direction: column; /*sentido dos elementos coluna*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: white;
+    display: flex; 
+    align-items: center; /*elementos centralizados*/
+    justify-content: space-between; /*cada elemento pro lado*/
+    margin: 0; /*altura e largura(lateral) externa*/
+    padding: 15px 20px; /*altura e largura(lateral) interna*/
+}
+
+.button-header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#button-produtos{
+    color: white;
+    background-color: #0A99FE;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 30px;
+    
+}
+
+#button-produtos:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#button-contatos{
+    color: #0A99FE;
+    background-color: rgba(10, 153, 254, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+#button-contatos:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 30px;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+main section ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+main section img{
+    height: 150px;
+    width: 190px;
+    margin: 0 auto;
+    border-radius: 8px 8px 0 0;
+}
+
+main section ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.text-description{
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 170px;
+    padding: 10px 10px;
+    height: 120px;
+}
+
+main section ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 720px){
+    body{
+        display: flex;
+        box-sizing: border-box;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    main{
+        margin: 5px;
+    }
+    
+    main section{
+        display: flex;
+        width: 100%;
+    }
+}
